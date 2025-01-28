@@ -1,0 +1,83 @@
+.discografia-main {
+    display: flex;
+    flex-direction: column;
+  
+    .hero-section {
+      background-image: url('../images/discografia.jpg');
+      @include background-cover;
+      height: 100vh;
+      @include flex-center;
+      position: relative;
+    }
+  
+    .hero-content {
+      text-align: center;
+      color: white;
+      z-index: 1;
+      padding: 20px;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+  
+      h1 {
+        font-family: $font-secondary;
+        font-size: 4rem;
+        margin-bottom: 20px;
+      }
+    }
+  
+    .albums-section {
+      margin-top: 50px;
+    }
+  
+    .solid-section {
+      padding: 30px 0;
+    }
+  
+    .spotify-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  
+      iframe {
+        max-width: 800px;
+        width: 100%;
+      }
+    }
+  
+    .divider-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 15px 0;
+    }
+  
+    hr {
+      border: none;
+      border-top: 1px solid $color-secondary;
+      width: calc(100% - 200px);
+      max-width: 1200px;
+    }
+  
+    h2 {
+      text-align: left;
+      color: $color-primary;
+      margin-bottom: 20px;
+    }
+  
+    .content-container {
+      width: calc(100% - 200px);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 100px;
+    }
+  }
+  

@@ -1,97 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Librería de íconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Estilos propios -->
+    <title>Contacto - Sabrina Carpenter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Conciertos</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body id="body">
-
-    <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <img class="headerLogo" src="../icons/scLogoNegro.png" alt="Logo Sabrina Carpenter">
-
-            <!-- Navegación principal -->
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="../index.html">
+                <img class="headerLogo" src="../icons/scLogoNegro.png" alt="Logo de Sabrina Carpenter">
+            </a>
             <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="discografia.html">Discografía</a></li>
-                    <li><a href="#">Conciertos</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Conciertos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-
-            <!-- Íconos de redes sociales -->
-            <aside>
-                <a href="https://open.spotify.com/intl-es/artist/74KM79TiuVKeVCqs8QtB0B" target="_blank" aria-label="Spotify">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-                <a href="https://www.instagram.com/sabrinacarpenter/" target="_blank" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/SabrinaAnnLynn" target="_blank" aria-label="Twitter">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCPKWE1H6xhxwPlqUlKgHb_w" target="_blank" aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
+            <aside class="social-icons">
+                <a href="https://open.spotify.com/intl-es/artist/74KM79TiuVKeVCqs8QtB0B" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/sabrinacarpenter/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/SabrinaAnnLynn" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCPKWE1H6xhxwPlqUlKgHb_w" target="_blank"><i class="fab fa-youtube"></i></a>
             </aside>
         </div>
     </header>
 
-    <!-- MAIN -->
-    <main>
-        <!-- Imagen principal -->
-        <section class="hero">
-            <img src="../images/conciertos.jpg" alt="Sabrina Carpenter - Short N’ Sweet">
+    <main class="concert-main">
+        <section class="hero-section">
+            <div class="hero-content text-center">
+            <h1>Conciertos</h1>
+            <p>Vive la energía de Sabrina en vivo <br>
+                Desde los grandes escenarios hasta los momentos más íntimos, Sabrina sabe cómo conectar con su público y dejar huella. <br>
+                ¡Descubre las fechas y lugares para un show que no te querrás perder!</p>
+            </div>
         </section>
+
+    <!-- Tabla de Conciertos -->
+    <main class="container-concert">
+        <h2 class="text-center mb-4">Prepárate para un show inolvidable</h2>
+        
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 03 de marzo</span>
+                <span class="day">Lunes</span>
+            </div>
+            <div class="location">Dublín, Irlanda</div>
+            <div class="venue">3 Arena</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 03 de Marzo en Dublín">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+    
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 04 de marzo</span>
+                <span class="day">Martes</span>
+            </div>
+            <div class="location">Dublín, Irlanda</div>
+            <div class="venue">3 Arena</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 04 de Marzo en Dublín">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+    
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 06 de marzo</span>
+                <span class="day">Jueves</span>
+            </div>
+            <div class="location">Birmingham, Reino Unido</div>
+            <div class="venue">Arena Utilita</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 06 de Marzo en Birmingham">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+    
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 08 de marzo</span>
+                <span class="day">Sábado</span>
+            </div>
+            <div class="location">Londres, Reino Unido</div>
+            <div class="venue">The O2</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 08 de Marzo en Londres">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 09 de marzo</span>
+                <span class="day">Domingo</span>
+            </div>
+            <div class="location">Londres, Reino Unido</div>
+            <div class="venue">The O2</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 08 de Marzo en Londres">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 11 de marzo</span>
+                <span class="day">Martes</span>
+            </div>
+            <div class="location">Glasgow, Reino Unido</div>
+            <div class="venue">OVO Hidro</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 08 de Marzo en Londres">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 13 de marzo</span>
+                <span class="day">Jueves</span>
+            </div>
+            <div class="location">Manchester, Reino Unido</div>
+            <div class="venue">Cooperativa en vivo</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 08 de Marzo en Londres">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 14 de marzo</span>
+                <span class="day">Viernes</span>
+            </div>
+            <div class="location">Manchester, Reino Unido</div>
+            <div class="venue">Cooperativa en vivo</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 08 de Marzo en Londres">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
+
+        <div class="concert-row">
+            <div class="date-info">
+                <span class="date">2025 <br> 16 de marzo</span>
+                <span class="day">Domingo</span>
+            </div>
+            <div class="location">París, Francia</div>
+            <div class="venue">Estadio Accor</div>
+            <div class="ticket-button">
+                <button class="btn btn-primary btn-sm d-inline-flex align-items-center" aria-label="Consigue boletos para el concierto del 08 de Marzo en Londres">
+                    <i class="bi bi-ticket-perforated me-2"></i>
+                    <span>Consigue tus boletos</span>
+                </button>
+            </div>            
+        </div>
     </main>
+    
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-container">
-            <img class="footerLogo" src="../icons/scLogoBlanco.png" alt="Logo Sabrina Carpenter">
-
-            <!-- Navegación secundaria -->
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="discografia.html">Discografía</a></li>
-                    <li><a href="#">Conciertos</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-
-            <!-- Íconos de redes sociales -->
-            <section class="social-links">
-                <a href="https://open.spotify.com/intl-es/artist/74KM79TiuVKeVCqs8QtB0B" target="_blank" aria-label="Spotify">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-                <a href="https://www.instagram.com/sabrinacarpenter/" target="_blank" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/SabrinaAnnLynn" target="_blank" aria-label="Twitter">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCPKWE1H6xhxwPlqUlKgHb_w" target="_blank" aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img class="footerLogo" src="../icons/scLogoBlanco.png" alt="Logo de Sabrina Carpenter blanco">
+                </div>
+                <div class="col-md-4">
+                    <h8>PÁGINA</h8>
+                    <nav>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Conciertos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <h8>REDES SOCIALES</h8>
+                    <div class="social-icons">
+                        <a href="https://open.spotify.com/intl-es/artist/74KM79TiuVKeVCqs8QtB0B" target="_blank"><i class="fab fa-spotify"></i></a>
+                        <a href="https://www.instagram.com/sabrinacarpenter/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/SabrinaAnnLynn" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCPKWE1H6xhxwPlqUlKgHb_w" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-info">
+                <p>Keyla Díaz</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome (para iconos) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
 </body>
-
 </html>
-

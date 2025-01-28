@@ -1,0 +1,23 @@
+{
+  "name": "cursito_coder",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "sass": "sass --watch sass:css"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keyla802/sabrina-carpenter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keyla802/sabrina-carpenter/issues"
+  },
+  "homepage": "https://github.com/Keyla802/sabrina-carpenter#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}

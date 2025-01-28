@@ -1,0 +1,42 @@
+.index-main {
+    display: flex;
+    flex-direction: column;
+  
+    .hero-section {
+      background-image: url('../images/index.jpg');
+      @include background-cover;
+      height: calc(100vh - #{$header-height});
+      @include flex-center;
+      position: relative;
+    }
+  
+    .hero-content {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+      }
+  
+      h1 {
+        font-family: $font-secondary;
+        font-size: 4rem;
+        color: white;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+      }
+  
+      p {
+        color: white;
+        max-width: 800px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  

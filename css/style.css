@@ -196,7 +196,7 @@ body {
     background-image: url('../images/discografia.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Altura total de la ventana */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,45 +228,177 @@ body {
 }
 
 /* Sección Sólida para el álbum principal */
-.solid-section {
-    background-color: #FCE6B8;
-    padding: 50px 0;
+
+.albums-section {
+    margin-top: 50px; /* Ajusta el valor según tu preferencia */
 }
 
-.solid-section h2, .solid-section h3 {
+.solid-section {
+    padding: 30px 0;
+}
+
+.spotify-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.spotify-container iframe {
+    max-width: 800px;
+    width: 100%;
+}
+
+.divider-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #D89308;
+    width: calc(100% - 200px);
+    max-width: 1200px; /* Opcional: limitar ancho máximo */
+}
+
+
+h2 {
+    text-align: left;
     color: #E63979;
     margin-bottom: 20px;
 }
 
-/* Contenedor del iframe de Spotify */
-.spotify-container {
+/* Contenedor principal para alinear contenido */
+.content-container {
+    width: calc(100% - 200px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+
+/* CONCIERTOS */
+.concert-section {
+    background-image: url('../images/conciertos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura total de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.concert-main .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.concert-main .hero-section h1 {
+    font-family: 'Send Flowers', cursive;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.concert-main .hero-section p {
+    color: white;
     max-width: 800px;
-    width: calc(100% - 200px);
-    margin: 50px auto; /* Reducido de 100px a 50px */
+    position: relative;
+    z-index: 1;
 }
 
-/* Estilos para el iframe de Spotify */
-.spotify-container iframe {
+.container-concert {
+    background-image: url('../images/conciertos2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Altura mínima total de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.concert-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(252, 230, 184, 0.301);
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin-bottom: 20px;
     width: 100%;
-    height: 380px;
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
+}
+
+.date-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.date {
+    font-size: 1.1em;
+}
+
+.day {
+    font-size: 0.9em;
+    color: black;
+}
+
+.location, .venue {
+    font-size: 1em;
+    text-align: center;
+}
+
+.ticket-button .btn {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #d63384; /* Color del botón original */
+    color: #fff; /* Color del texto */
     border: none;
-    max-height: 80vh; /* Limita la altura al 80% de la altura de la ventana */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
 }
 
-/* Línea divisoria */
-hr {
-    border: 1px solid #D89308;
-    margin: 50px auto; /* Reducido de 100px a 50px */
-    width: calc(100% - 200px);
+.ticket-button .btn:hover {
+    background-color: #b82c6e; /* Color al pasar el mouse (más oscuro) */
+    transform: scale(1.05); /* Efecto de zoom ligero */
+    color: #fff; /* Asegura que el texto siga siendo blanco */
 }
 
-/* Subtítulos */
-h2 {
-    text-align: left; /* Alineado a la izquierda */
-    color: #E63979; /* Color especificado */
-    margin-bottom: 30px;
-    margin-left: 100px; /* Alineado con el margen izquierdo */
+@media (max-width: 768px) {
+    .concert-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .ticket-button {
+        width: 100%;
+    }
+
+    .ticket-button .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
+
+
 
 /* GALERIA */
 .galeria-main {
